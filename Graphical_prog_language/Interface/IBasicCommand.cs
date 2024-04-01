@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Graphical_Programming_Language.Interface
+namespace Graphical_prog_language.Interface
 {
     /// <summary>
     /// Represents an interface for generic commands.

@@ -173,6 +173,11 @@ namespace Graphical_prog_language
 
         }
 
+        private void richCommandBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
 
 
         /// <summary>

@@ -1,4 +1,4 @@
-﻿namespace Graphical_Programming_Language
+﻿namespace Graphical_prog_language
 {
     partial class Canvas
     {
@@ -45,9 +45,10 @@
             runBtn.BackColor = Color.SpringGreen;
             runBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             runBtn.ForeColor = SystemColors.ActiveCaptionText;
-            runBtn.Location = new Point(188, 13);
+            runBtn.Location = new Point(269, 22);
+            runBtn.Margin = new Padding(4, 5, 4, 5);
             runBtn.Name = "runBtn";
-            runBtn.Size = new Size(61, 23);
+            runBtn.Size = new Size(87, 38);
             runBtn.TabIndex = 0;
             runBtn.Text = "Run";
             runBtn.UseVisualStyleBackColor = false;
@@ -58,9 +59,10 @@
             LoadScript.BackColor = Color.Lime;
             LoadScript.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             LoadScript.ForeColor = SystemColors.ControlLightLight;
-            LoadScript.Location = new Point(12, 390);
+            LoadScript.Location = new Point(17, 650);
+            LoadScript.Margin = new Padding(4, 5, 4, 5);
             LoadScript.Name = "LoadScript";
-            LoadScript.Size = new Size(103, 30);
+            LoadScript.Size = new Size(147, 50);
             LoadScript.TabIndex = 1;
             LoadScript.Text = "Load Script";
             LoadScript.UseVisualStyleBackColor = false;
@@ -70,9 +72,10 @@
             // 
             runScriptBtn.BackColor = SystemColors.HotTrack;
             runScriptBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            runScriptBtn.Location = new Point(121, 390);
+            runScriptBtn.Location = new Point(173, 650);
+            runScriptBtn.Margin = new Padding(4, 5, 4, 5);
             runScriptBtn.Name = "runScriptBtn";
-            runScriptBtn.Size = new Size(110, 30);
+            runScriptBtn.Size = new Size(157, 50);
             runScriptBtn.TabIndex = 2;
             runScriptBtn.Text = "Run Script";
             runScriptBtn.UseVisualStyleBackColor = false;
@@ -82,9 +85,10 @@
             // 
             saveScriptBtn.BackColor = Color.DarkOrange;
             saveScriptBtn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            saveScriptBtn.Location = new Point(12, 437);
+            saveScriptBtn.Location = new Point(17, 728);
+            saveScriptBtn.Margin = new Padding(4, 5, 4, 5);
             saveScriptBtn.Name = "saveScriptBtn";
-            saveScriptBtn.Size = new Size(103, 30);
+            saveScriptBtn.Size = new Size(147, 50);
             saveScriptBtn.TabIndex = 3;
             saveScriptBtn.Text = "Save Script";
             saveScriptBtn.UseVisualStyleBackColor = false;
@@ -94,9 +98,10 @@
             // 
             ClearBtn.BackColor = Color.Red;
             ClearBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            ClearBtn.Location = new Point(121, 437);
+            ClearBtn.Location = new Point(173, 728);
+            ClearBtn.Margin = new Padding(4, 5, 4, 5);
             ClearBtn.Name = "ClearBtn";
-            ClearBtn.Size = new Size(110, 30);
+            ClearBtn.Size = new Size(157, 50);
             ClearBtn.TabIndex = 4;
             ClearBtn.Text = "Clear";
             ClearBtn.UseVisualStyleBackColor = false;
@@ -106,9 +111,10 @@
             // 
             ResetBtn.BackColor = Color.Purple;
             ResetBtn.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            ResetBtn.Location = new Point(12, 482);
+            ResetBtn.Location = new Point(17, 803);
+            ResetBtn.Margin = new Padding(4, 5, 4, 5);
             ResetBtn.Name = "ResetBtn";
-            ResetBtn.Size = new Size(103, 29);
+            ResetBtn.Size = new Size(147, 48);
             ResetBtn.TabIndex = 5;
             ResetBtn.Text = "Reset";
             ResetBtn.UseVisualStyleBackColor = false;
@@ -116,27 +122,31 @@
             // 
             // commandBox
             // 
-            commandBox.Location = new Point(12, 13);
+            commandBox.Location = new Point(17, 22);
+            commandBox.Margin = new Padding(4, 5, 4, 5);
             commandBox.Name = "commandBox";
             commandBox.PlaceholderText = "Enter single line command";
-            commandBox.Size = new Size(170, 23);
+            commandBox.Size = new Size(241, 31);
             commandBox.TabIndex = 6;
             // 
             // richCommandBox
             // 
             richCommandBox.BackColor = SystemColors.ControlLight;
-            richCommandBox.Location = new Point(12, 58);
+            richCommandBox.Location = new Point(17, 97);
+            richCommandBox.Margin = new Padding(4, 5, 4, 5);
             richCommandBox.Name = "richCommandBox";
-            richCommandBox.Size = new Size(238, 318);
+            richCommandBox.Size = new Size(338, 527);
             richCommandBox.TabIndex = 7;
             richCommandBox.Text = "";
+            richCommandBox.TextChanged += richCommandBox_TextChanged;
             // 
             // pictureBox
             // 
             pictureBox.BackColor = SystemColors.ActiveCaption;
-            pictureBox.Location = new Point(264, 12);
+            pictureBox.Location = new Point(377, 20);
+            pictureBox.Margin = new Padding(4, 5, 4, 5);
             pictureBox.Name = "pictureBox";
-            pictureBox.Size = new Size(637, 500);
+            pictureBox.Size = new Size(910, 833);
             pictureBox.TabIndex = 8;
             pictureBox.TabStop = false;
             pictureBox.Paint += pictureBox_Paint;
@@ -144,9 +154,9 @@
             // 
             // Canvas
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(907, 523);
+            ClientSize = new Size(1296, 872);
             Controls.Add(pictureBox);
             Controls.Add(richCommandBox);
             Controls.Add(commandBox);
@@ -156,6 +166,7 @@
             Controls.Add(runScriptBtn);
             Controls.Add(LoadScript);
             Controls.Add(runBtn);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Canvas";
             Text = "Graphical Programming";
             Load += Canvas_Load;

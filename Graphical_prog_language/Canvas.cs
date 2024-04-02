@@ -9,8 +9,8 @@ namespace Graphical_prog_language
         private Point Position = new Point(330, 250);
         private Pen PenColor = new Pen(Color.Black);
         private Color fillColor = Color.Black;
-       // public ShapeMaker ShapeMaker;
-        //public MultiLineCommands MultiLineCommands;
+        public ShapeMaker ShapeMaker;
+       // public MultiLineCommands MultiLineCommands;
 
         /// <summary>
         /// Initializes a new instance of the Canvas class.
@@ -20,7 +20,7 @@ namespace Graphical_prog_language
             InitializeComponent();
             CommandParser commandParser = new CommandParser("");
             ShapeMaker = new ShapeMaker(this);
-            MultiLineCommands = new MultiLineCommands(this);
+           // MultiLineCommands = new MultiLineCommands(this);
         }
 
         /// <summary>
@@ -76,7 +76,7 @@ namespace Graphical_prog_language
         private async void runScriptBtn_Click(object sender, EventArgs e)
         {
             string scriptContent = richCommandBox.Text;
-            await Task.Run(() => MultiLineCommands.ExecuteCommands(scriptContent));
+           // await Task.Run(() => MultiLineCommands.ExecuteCommands(scriptContent));
         }
 
 
@@ -174,6 +174,11 @@ namespace Graphical_prog_language
         }
 
         private void richCommandBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox_Click(object sender, EventArgs e)
         {
 
         }

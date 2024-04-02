@@ -1,10 +1,8 @@
-﻿
-using Graphical_prog_language.Implementations.BasicCommands;
+﻿using Graphical_prog_language.Implementations.BasicCommands;
 using Graphical_prog_language.Implementations.GraphicCommands;
 using Graphical_prog_language.Interface;
-using Graphical_prog_language;
 
-namespace Graphical_Programming_Language.Implementations
+namespace Graphical_prog_language.Implementations
 {
     public class ShapeMaker
     {

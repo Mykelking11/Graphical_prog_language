@@ -149,6 +149,7 @@
             pictureBox.Size = new Size(910, 833);
             pictureBox.TabIndex = 8;
             pictureBox.TabStop = false;
+            pictureBox.Click += pictureBox_Click;
             pictureBox.Paint += pictureBox_Paint;
             pictureBox.MouseMove += pictureBox_MouseMove_1;
             // 

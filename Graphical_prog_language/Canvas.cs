@@ -9,8 +9,8 @@ namespace Graphical_prog_language
         private Point Position = new Point(330, 250);
         private Pen PenColor = new Pen(Color.Black);
         private Color fillColor = Color.Black;
-        public ShapeMaker ShapeMaker;
-        public MultiLineCommands MultiLineCommands;
+       // public ShapeMaker ShapeMaker;
+        //public MultiLineCommands MultiLineCommands;
 
         /// <summary>
         /// Initializes a new instance of the Canvas class.

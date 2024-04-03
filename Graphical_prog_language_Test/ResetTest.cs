@@ -19,8 +19,8 @@ namespace Graphical_prog_language_Tests
             resetCommand.Execute(canvas, new string[] { });
 
             // Assert
-            Assert.AreEqual(new Point(200, 150), canvas.CurrentPosition);
-            Assert.AreEqual(Color.Black, canvas.DrawingPen.Color);
+            Assert.AreEqual(new Point(400, 150), canvas.CurrentPosition);
+            Assert.AreEqual(Color.Red, canvas.DrawingPen.Color);
             Assert.AreEqual(Color.Black, canvas.FillColor);
 
         }

@@ -26,7 +26,7 @@ namespace Graphical_prog_language.Implementations.BasicCommands
             }
             else
             {
-                MessageBox.Show("Invalid arguments for 'drawto' command. Please provide a valid coordinates.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid arguments for 'drawto' command. Kindly provide a valid coordinates.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

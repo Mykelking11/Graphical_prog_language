@@ -36,16 +36,12 @@ namespace Graphical_prog_language.Implementations.GraphicCommands
                     graphics.DrawEllipse(drawingPen, x, y, 2 * radius, 2 * radius);
                 }
 
-                // Use Invoke to update the commandTextBox on the UI thread
-                //commandTextBox.Invoke((MethodInvoker)delegate
-                //{
-                //    commandTextBox.Clear();
-                //});
+             
             }
             else
             {
                 // Show error message for invalid arguments
-                MessageBox.Show("Invalid arguments for 'circle' command. Please provide a valid radius.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid arguments for 'circle' command. Kindly provide a valid radius.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

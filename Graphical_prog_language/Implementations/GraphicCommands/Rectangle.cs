@@ -38,11 +38,6 @@ namespace Graphical_prog_language.Implementations.GraphicCommands
                     // Draw the rectangle
                     graphics.DrawRectangle(drawingPen, x, y, width, height);
 
-                    // Use Invoke to update the commandTextBox on the UI thread
-                    //commandTextBox.Invoke((MethodInvoker)delegate
-                    //{
-                    //    commandTextBox.Clear();
-                    //  });
                 }
                 else
                 {

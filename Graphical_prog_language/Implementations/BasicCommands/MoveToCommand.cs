@@ -21,7 +21,7 @@ namespace Graphical_prog_language.Implementations.BasicCommands
             }
             else
             {
-                MessageBox.Show("Invalid arguments for 'moveto' command. Please provide valid coordinates.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid arguments for 'moveto' command. kindly provide valid coordinates.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

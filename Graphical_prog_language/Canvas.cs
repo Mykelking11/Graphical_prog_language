@@ -6,7 +6,7 @@ namespace Graphical_prog_language
     public partial class Canvas : Form, ICanvas
     {
         private bool isFill = false;
-        private Point Position = new Point(330, 250);
+        private Point Position = new Point(450, 300);
         private Pen PenColor = new Pen(Color.Black);
         private Color fillColor = Color.Black;
         public ShapeMaker ShapeMaker;

@@ -53,7 +53,7 @@ namespace Graphical_prog_language.Implementations.BasicCommands
                 else
                 {
                     // Show error message for invalid pen color
-                    MessageBox.Show("Invalid pen color. Available colors: red, blue, ...", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Invalid pen color. Available colors: red, blue, green, yellow, etc", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
             }
@@ -64,11 +64,6 @@ namespace Graphical_prog_language.Implementations.BasicCommands
                 return;
             }
 
-            // Use Invoke to update the commandTextBox on the UI thread
-            /* commandTextBox.Invoke((MethodInvoker)delegate
-             {
-                 commandTextBox.Clear();
-             });*/
         }
     }
 }

@@ -45,11 +45,7 @@ namespace Graphical_prog_language.Implementations.GraphicCommands
                     // Draw the triangle
                     graphics.DrawPolygon(drawingPen, points);
 
-                    // Use Invoke to update the commandTextBox on the UI thread
-                    /* commandTextBox.Invoke((MethodInvoker)delegate
-                     {
-                         commandTextBox.Clear();
-                     });*/
+                    
                 }
                 else
                 {
@@ -60,7 +56,7 @@ namespace Graphical_prog_language.Implementations.GraphicCommands
             else
             {
                 // Show error message for insufficient arguments
-                MessageBox.Show("Not enough arguments for 'triangle' command. Please provide a side length.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Not enough arguments for 'triangle' command. Kindly provide a side length.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

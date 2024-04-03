@@ -13,15 +13,11 @@ namespace Graphical_prog_language.Implementations.BasicCommands
             TextBox commandTextBox = canvas.CommandTextBox;
 
             // Reset canvas properties
-            canvas.CurrentPosition = new Point(200, 150);
-            canvas.DrawingPen = new Pen(Color.Black);
+            canvas.CurrentPosition = new Point(400, 150);
+            canvas.DrawingPen = new Pen(Color.Red);
             canvas.FillColor = Color.Black;
 
-            // Use Invoke to update the commandTextBox on the UI thread
-            /*commandTextBox.Invoke((MethodInvoker)delegate
-            {
-                commandTextBox.Clear();
-            });*/
+            
         }
     }
 }
